@@ -1,0 +1,8 @@
+Average rewards per action: {0: 13.191140555566625, 1: 12.368573630146662, 2: 13.378395029677108, 3: 12.391892670482987}
+
+
+
+Action 0: Top of the page
+Action 1: Middle of the page
+Action 2: Bottom of the page
+Action 3: Right of the page

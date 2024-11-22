@@ -1,0 +1,25 @@
+What is an Episode?
+
+An episode in RL is defined as:
+
+Initialization: The environment is set to an initial state.
+
+Interactions: The agent takes actions based on its current policy (often randomly at the beginning),
+                 receives rewards, and transitions through states.
+
+Termination: The episode ends when certain conditions are met, like reaching a predefined number of steps,
+             or when the environment reaches a "done" state (e.g., the agent has successfully optimized the placement of ads 
+             or reached a maximum number of steps).
+
+------------------------------------------------------------------------------------------------
+
+What is a Reward?
+The reward in RL is a numerical value that the agent receives after taking an action in a given state.
+It measures the quality of the agent's action and helps guide its learning process.
+
+For ad placement, a reward could be designed based on:
+
+User engagement: For example, clicks, conversions, or time spent on the page.
+Revenue: If the model is designed to optimize for ad revenue, the reward could be the earnings from the ad placement.
+User satisfaction: The reward could be based on how well the ad matches user preferences.  
+
