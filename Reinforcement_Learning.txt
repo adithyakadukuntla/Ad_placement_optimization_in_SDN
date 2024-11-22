@@ -1,3 +1,25 @@
+Theory of Ad Placement Optimization in SDN Using Reinforcement Learning
+
+Ad placement optimization in SDN involves strategically positioning advertisements to maximize performance metrics such as user engagement, revenue, or network efficiency. SDN offers programmability and centralized control, making it ideal for dynamically optimizing such tasks. When reinforcement learning (RL) is applied, the system learns to make placement decisions by interacting with the environment, receiving feedback in the form of rewards, and adapting over time.
+
+Components of RL in Ad Placement Optimization:
+
+Agent: The decision-making model, such as Deep Q-Network (DQN), learns the optimal placement strategy.
+Environment: The SDN setup, including network topology, user traffic patterns, and ad inventory.
+State: The current representation of the network and advertisement-related features, such as bandwidth usage, user location, or engagement metrics.
+Action: The decision to place a specific ad at a given location in the network.
+Reward: A feedback signal representing the success of the action, such as revenue generated, click-through rate, or network efficiency.
+
+Workflow:
+Initialization: The agent starts with random knowledge of the environment and selects actions randomly or based on a policy.
+Interaction: The agent places ads based on its current policy and observes the reward and the resulting state of the system.
+Learning: The agent updates its policy using Q-learning or a neural network in the case of DQN, optimizing future rewards.
+Iteration: This process repeats over multiple episodes until the agent converges on an optimal or near-optimal ad placement strategy.
+
+
+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+
 What is an Episode?
 
 An episode in RL is defined as:
@@ -11,7 +33,7 @@ Termination: The episode ends when certain conditions are met, like reaching a p
              or when the environment reaches a "done" state (e.g., the agent has successfully optimized the placement of ads 
              or reached a maximum number of steps).
 
-------------------------------------------------------------------------------------------------
+--------------------------------------------------------------------------------------------------------------------------
 
 What is a Reward?
 The reward in RL is a numerical value that the agent receives after taking an action in a given state.
@@ -21,5 +43,21 @@ For ad placement, a reward could be designed based on:
 
 User engagement: For example, clicks, conversions, or time spent on the page.
 Revenue: If the model is designed to optimize for ad revenue, the reward could be the earnings from the ad placement.
-User satisfaction: The reward could be based on how well the ad matches user preferences.  
+User satisfaction: The reward could be based on how well the ad matches user preferences. 
+
+--------------------------------------------------------------------------------------------------------------------------------
+
+Placement of ads on website is the primary problem for companies that operate on ad revenue.
+The position where the ad is placed plays pivotal role on whether or not the ad will be clicked. Here we have the following choices:
+
+1.Place them randomly, or
+2.Place the ad on the same position
+
+The problem with placing the ad on the same position is the user, after a certain time, will start ignoring the space since he's used to seeing ad at the place, he will end up ignoring that particular position hereafter. Hence, this will reduce the number of clicks on ads. The problem with the former option, placing them randomly, is it wouldn't take optimal positions into consideration. For instance, text beside images are viewed higher number of times than those text which are placed at a distance. It is infeasible to go through every website and repeat the procedure.
+
+Solution: Reinforcement Learning
+
+Using Reinforcement Learning we can approximate the human behavior.
+
+-------------------------------------------------------------------------------------------------------------------------------
 
